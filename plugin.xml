@@ -13,7 +13,6 @@
 
     <!-- AAR: copy to the correct folder and add as a framework -->
     <resource-file src="libs/ble-sdk-release.aar" target="libs/ble-sdk-release.aar" />
-    <framework src="libs/ble-sdk-release.aar" custom="true" type="aar" />
 
     <!-- External Gradle dependency -->
     <framework src="io.reactivex.rxjava2:rxjava:2.2.20"/>
