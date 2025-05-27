@@ -9,7 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 // Placeholder import - replace with real SDK class
-import com.igloohome.sdk.IglooPlugin;
+// import com.igloohome.sdk.IglooPlugin;
 
 public class IglooPlugin extends CordovaPlugin {
     private IglooPlugin iglooPlugin; // replace Object with actual SDK class
