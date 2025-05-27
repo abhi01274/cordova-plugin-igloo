@@ -12,7 +12,7 @@
     <source-file src="src/android/IglooPlugin.java" target-dir="src/com/igloo/plugin" />
 
     <!-- AAR: copy to the correct folder and add as a framework -->
-    <resource-file src="libs/ble-sdk-release.aar" target="libs/ble-sdk-release.aar" />
+    <resource-file src="libs/ble-sdk-release.aar" target="app/libs/ble-sdk-release.aar" />
 
     <!-- External Gradle dependency -->
     <framework src="io.reactivex.rxjava2:rxjava:2.2.20"/>
