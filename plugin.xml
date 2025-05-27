@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-igloo" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>IglooPlugin</name>
+  <description>Cordova Plugin for Igloo SDK</description>
+  <license>MIT</license>
+  <keywords>cordova, igloo, plugin</keywords>
+  <platform name="android">
+    <source-file src="src/android/IglooPlugin.java" target-dir="src/com/igloo/plugin" />
+    <framework src="ble-sdk-release.aar" custom="true" type="aar" />
+    <config-file parent="/*" target="AndroidManifest.xml">
+      <uses-permission android:name="android.permission.BLUETOOTH" />
+      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    </config-file>
+  </platform>
+</plugin>
