@@ -8,7 +8,7 @@
   <keywords>cordova, igloo, plugin</keywords>
   <platform name="android">
     <source-file src="src/android/IglooPlugin.java" target-dir="src/com/igloo/plugin" />
-    <framework src="ble-sdk-release.aar" custom="true" type="aar" />
+    <framework src="ble-sdk-release.aar" type="aar" />
     <config-file parent="/*" target="AndroidManifest.xml">
       <uses-permission android:name="android.permission.BLUETOOTH" />
       <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
