@@ -8,7 +8,7 @@
   <keywords>cordova, igloo, plugin</keywords>
   <platform name="android">
     <source-file src="src/android/IglooPlugin.java" target-dir="src/com/igloo/plugin" />
-    <resource-file src="libs/ble-sdk-release.aar" target="app/libs/ble-sdk-release.aar" />
+    <resource-file src="app/libs/ble-sdk-release.aar" target="app/libs/ble-sdk-release.aar" />
     <framework src="app/libs/ble-sdk-release.aar" custom="true" type="gradleReference" />
     <framework src="io.reactivex.rxjava2:rxjava:2.2.20"/>
     <config-file parent="/*" target="AndroidManifest.xml">
