@@ -6,11 +6,19 @@
   <description>Cordova Plugin for Igloo SDK</description>
   <license>MIT</license>
   <keywords>cordova, igloo, plugin</keywords>
+
   <platform name="android">
+    <!-- Java source -->
     <source-file src="src/android/IglooPlugin.java" target-dir="src/com/igloo/plugin" />
-    <resource-file src="libs/ble-sdk-release.aar" target="app/libs/ble-sdk-release.aar" />
+
+    <!-- AAR: copy to the correct folder and add as a framework -->
+    <resource-file src="libs/ble-sdk-release.aar" target="libs/ble-sdk-release.aar" />
     <framework src="libs/ble-sdk-release.aar" custom="true" type="aar" />
+
+    <!-- External Gradle dependency -->
     <framework src="io.reactivex.rxjava2:rxjava:2.2.20"/>
+
+    <!-- Permissions -->
     <config-file parent="/*" target="AndroidManifest.xml">
       <uses-permission android:name="android.permission.BLUETOOTH" />
       <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
