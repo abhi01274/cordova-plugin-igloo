@@ -11,7 +11,6 @@ import co.igloohome.ble.lock.BleManager;
 import io.reactivex.disposables.Disposable;
 
 public class IglooPlugin extends CordovaPlugin {
-    private IglooPlugin iglooPlugin; // replace Object with actual SDK class
     private boolean isInitialized = false;
 
     @Override
