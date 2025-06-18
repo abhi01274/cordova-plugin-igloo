@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-iglooaccess",
+  "version": "1.0.0",
+  "description": "Cordova plugin for Igloohome Access SDK",
+  "cordova": {
+    "id": "com.igloohome.iglooaccess",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "igloohome",
+    "bluetooth",
+    "access",
+    "sdk"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

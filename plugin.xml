@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.igloohome.iglooaccess" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>IglooAccessPlugin</name>
+
+    <description>Cordova plugin for Igloohome Access SDK</description>
+    <license>MIT</license>
+    <keywords>cordova,igloohome,bluetooth,access,sdk</keywords>
+    <platform name="android">
+
+        <!-- Reference the Java plugin source file -->
+        <source-file src="src/android/IglooAccessPlugin.java" target-dir="src/com/igloohome/cordova"/>
+
+        <!-- Optional: Include .aar file directly -->
+        <!-- If you use a local AAR instead of Maven Central -->
+        <!--
+        <source-file src="src/android/libs/iglooaccess-sdk.aar" target-dir="libs"/>
+        <framework src="src/android/libs/iglooaccess-sdk.aar" custom="true" type="aar"/>
+        -->
+
+        <!-- If hosted on a Maven repo (like GitLab Package Registry) -->
+        <framework src="com.igloohome:iglooaccess-sdk:1.0.0" />
+
+        <!-- Permissions (optional, depending on SDK) -->
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        </config-file>
+    </platform>
+
+    <!-- JavaScript interface for Cordova -->
+    <js-module src="www/iglooaccess.js" name="IglooAccess">
+        <clobbers target="IglooAccess" />
+    </js-module>
+</plugin>
