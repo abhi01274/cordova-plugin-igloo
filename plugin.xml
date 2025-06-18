@@ -18,7 +18,7 @@
         -->
 
         <!-- If hosted on a Maven repo (like GitLab Package Registry) -->
-        <framework src="com.igloohome:iglooaccess-sdk:1.0.0" />
+        <framework src="com.igloohome:iglooaccess-android-sdk:1.0.0" />
 
         <!-- Permissions (optional, depending on SDK) -->
         <config-file target="AndroidManifest.xml" parent="/*">
